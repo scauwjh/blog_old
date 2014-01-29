@@ -52,3 +52,10 @@ body{
 	background-color:#101010;
 	height: 60px;
 }
+
+/** comment page **/
+#disqus_thread{
+	margin-top:50px;
+	margin-bottom:50px;
+	height:350px;
+}

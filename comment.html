@@ -74,15 +74,8 @@
 				dsq.async = true;
 				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 				//alert(123);
-                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0])
-                            .appendChild(dsq);
-                $("#disqus_thread").load(function(){
-                    var iframe = window.frames[0];
-                    alert(123456);
-                    var data = $(iframe.document.body).text();
-                    if(data != null)
-                    	alert(123);
-                });
+				var obj = document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0];
+                obj.appendChild(dsq);
 			});
 		</script>
 	</body>

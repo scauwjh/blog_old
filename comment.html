@@ -78,7 +78,7 @@
 					dsq.async = true;
 					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 					//alert(123);
-					$("#disqus_container").append(dsp);
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(dsq);
 				});
 			});
 		</script>

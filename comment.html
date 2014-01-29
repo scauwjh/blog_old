@@ -78,6 +78,7 @@
                             .appendChild(dsq);
                 $("#disqus_thread").load(function(){
                     var iframe = window.frames[0];
+                    alert(123456);
                     var data = $(iframe.document.body).text();
                     if(data != null)
                     	alert(123);

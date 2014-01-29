@@ -76,8 +76,11 @@
 				//alert(123);
                 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0])
                             .appendChild(dsq);
-                $("iframe").load(function(){
-                    alert(123);
+                $("#disqus_thread").load(function(){
+                    var iframe = window.frames[0];
+                    var data = $(iframe.document.body).text();
+                    if(data != null)
+                    	alert(123);
                 });
 			});
 		</script>

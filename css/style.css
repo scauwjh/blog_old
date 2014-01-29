@@ -55,7 +55,10 @@ body{
 
 /** comment page **/
 #disqus_thread{
-	margin-top:50px;
-	margin-bottom:50px;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left: 25px;
+	margin-right: 25px;
 	height:350px;
+	border-radius: 5px;
 }

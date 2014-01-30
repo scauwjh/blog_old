@@ -46,7 +46,7 @@ body{
 
 #person-carousel{
 	height:250px;
-	margin-left:-25px;
+	margin-left:-10px;
 }
 .person-img{
 	border-radius:3px;
@@ -55,7 +55,13 @@ body{
 	margin-top:5px;
 }
 .person-carousel-desc{
-	margin-top:20px !important;
+	margin-top: 10px !important;
+	margin-left: -30px !important;
+	width: 175px;
+}
+.person-carousel-desc h4{
+	color:#9a59b5;
+	text-align: center;
 }
 #works{
 	margin-top:50px;
@@ -82,14 +88,16 @@ body{
 /* back to top */
 .back-to-top{
 	position:fixed;
-	bottom:30px;
-	right:30px;
+	bottom:20px;
+	right:10px;
 	z-index:1;
-	/*background:rgba(255,255,255,1);*/
+	/*background:rgba(0,0,0,0.5) !important;*/
 	/*color:#463265;*/
 }
 .back-to-top a{
 	color:#463265;
+	/*background:rgba(255,255,255,0.5) !important;*/
+	border-radius: 35px;
 	text-decoration:none;
 }
 .back-to-top .back-icon{

@@ -28,11 +28,11 @@ function appendItem(path, id, itemNum, imgClass, indicator, control, itemDesc, i
         items += '<img src="' + path + i + '.jpg" class="' + imgClass + '">';
         items += '</div>';
         if (itemDesc != null) {
-            items += '<div class="' + itemDescClass + '">';
-            items += itemDesc[i];
+            items += '<div class="col-lg-3 ' + itemDescClass + '">';
+            items += '<p>' + itemDesc[i] + '</p>';
             items += '</div>';
         }
-        items += '</div>';
+        items += '</div>';//end head or child
 
         //add indicator
         if(indicator){
@@ -64,7 +64,7 @@ function appendItem(path, id, itemNum, imgClass, indicator, control, itemDesc, i
 }
 
 /**
- * need to add the css with the name : 'back-to-top'
+ * need to add the css with the name : 'back-to-top' and 'back-icon' to change the style
  * need jquery and bootstrap
  */
 function backToTopIcon(){
@@ -74,7 +74,18 @@ function backToTopIcon(){
     str += '<p>返回顶部</p>';
     str += '</div>';
     $("body").append(str);
+    $(".back-to-top").css("display","none");
+    $(document).mousemove(function(){
+        var y = document.body.scrollTop;
+        if(y > 500) {
+            $(".back-to-top").fadeIn();
+        } else {
+            $(".back-to-top").fadeOut();
+        }
+    });
+    //1197  1254   X
+    //466  544    Y
     $(".back-to-top").click(function(){
-        $("body").animate({scrollTop:0});                   
+        $("body").animate({scrollTop:0});                
     });
 }

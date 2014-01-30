@@ -8,5 +8,5 @@ $(document).ready(function(){
 	var obj = document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0];
     obj.appendChild(dsq);
     //add back to top icon
-    backToTopIcon();
+    backToTopIcon(1000);
 });

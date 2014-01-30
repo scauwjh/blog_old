@@ -23,5 +23,5 @@ $(document).ready(function(){
         $("#person-carousel").carousel('next');
     });
     //add back to top icon
-    backToTopIcon();
+    backToTopIcon(1000);
 });

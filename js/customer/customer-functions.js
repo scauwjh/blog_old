@@ -67,7 +67,7 @@ function appendItem(path, id, itemNum, imgClass, indicator, control, itemDesc, i
  * need to add the css with the name : 'back-to-top' and 'back-icon' to change the style
  * need jquery and bootstrap
  */
-function backToTopIcon(){
+function backToTopIcon(height){
     var str = "";
     str += '<div class="back-to-top">';
     str += '<a href="javascript:;" class="glyphicon glyphicon-circle-arrow-up back-icon"></a>';
@@ -77,7 +77,7 @@ function backToTopIcon(){
     $(".back-to-top").css("display","none");
     $(document).mousemove(function(){
         var y = document.body.scrollTop;
-        if(y > 500) {
+        if(y > height) {
             $(".back-to-top").fadeIn();
         } else {
             $(".back-to-top").fadeOut();

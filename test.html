@@ -1,156 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <title>Website for wjh</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- bootstrap css -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.css" rel="stylesheet">
-        <!-- customer css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <!-- top navbar
-        ================================================== -->
-        <div class="navbar navbar-inverse navbar-top navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="javascript:;">wjh的个人网站</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="javascript:;">首页</a></li>
-                        <li><a href="javascript:;">博客</a></li>
-                        <li><a href="javascript:;">动漫</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">相册<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="javascript:;">照片</a></li>
-                                <li><a href="javascript:;">图片</a></li>
-                                <li><a href="javascript:;">手绘</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:;">音乐</a></li>
-                        <li><a href="javascript:;">视频</a></li>
-                        <li><a href="comment.html">评论</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Header carousel
-        ================================================== -->
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-            </ol>
-            <div class="carousel-inner" id="header_carousel_box">
-            </div>
-            <!-- carousel control -->
-            <a class="left carousel-control" href="#header-carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#header-carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div><!-- /.carousel -->
-
-
-        <!-- Main content
-        ================================================== -->
-        <div class="container main-content">
-            <div class="row" id="personal-intro">
-                <div class="col-lg-5 border box">
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-9">
-                        <h3>这就是我 —— wjh</h3>
-                        <p>我喜欢编程，喜欢代码编织的世界</p>
-                        <p>我喜欢运动，喜欢篮球、喜欢足球、喜欢跨栏</p> 
-                        <p>我喜欢动漫，喜欢二次元的纯真与美好</p>
-                        <p>我喜欢绘画，手绘出自己喜欢的二次元角色</p>
-                        <p>我喜欢摄影，从照片中，我可以看到不同的世界</p>
-                        <p>我喜欢尝试各种新东西，对新技术充满好奇心</p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 border box">
-                    <div id="person-carousel" class="carousel slide col-lg-9" data-ride="carousel">
-                        <div class="carousel-inner" id="person_carousel_box">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 box border" id="program-works">
-                    <div id="disqus">
-
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->
-
-        <footer class="footer" style="background-color:#101010"  rol="contentinfo">
-            <div class="container">
-                <p>XXXX</p>
-                <p>Design by @wjh</p>
-            </div>
-        </footer>
-
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                //header-carousel
-                var path = 'img/header-carousel/tmp';
-                var id = 'header_carousel_box';
-                var imgClass = 'header-carousel-img-all';
-                appendItem(path, id, 5, imgClass, true);
-                //person-carousel
-                path = 'img/person-carousel/intro';
-                id = 'person_carousel_box';
-                imgClass = 'person-img';
-                appendItem(path, id, 5, imgClass, false);
-                //click to next the carousel
-                $("#person-carousel").click(function(){
-                    $("#person-carousel").carousel('next');
-                });
-                /**
-                 * 添加轮播的item
-                 * @param path 路径，不含序号和图片后缀
-                 * @param id container id
-                 * @param itemNum item的个数，也就是轮播的图片的数量
-                 * @param imgClass 图片的class名
-                 * @param indicator 是否添加indicator，true or false
-                 */
-                function appendItem(path, id, itemNum, imgClass, indicator){
-                    for (var i = 0; i < itemNum; i++) {
-                        //add item
-                        var head = '<div class="item active">';
-                        var child = '<div class="item">';
-                        var item = (i==0)?(head):(child);
-                        item += '<img src="' + path + i + '.jpg" class="' + imgClass + '">';
-                        item += '</div>';
-                        $("#" + id).append(item);
-                        //add indicator
-                        if(indicator){
-                            head = '<li data-target="#header-carousel" data-slide-to="0" class="active"></li>';
-                            child = '<li data-target="#header-carousel" data-slide-to="' + i + '"></li>';
-                            item = (i==0)?(head):(child);
-                            $("#" + id).prev("ol").append(item);
-                        }
-                    }
-                }
-            });
-        </script>
-    </body>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="js/system/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".test").click(function(){
+            //alert(123);
+            $("body").animate({scrollTop:0});
+        });
+    });
+    </script>
+</head>
+<body>
+    <div style="width:100%;height:1500px;background:blue;" class="test"></div>
+    <div style="width:100%;height:1500px;background:red;" class="test"></div>
+    <div style="width:100%;height:1500px;background:green;" class="test"></div>
+    <div style="width:100%;height:1500px;background:orange;" class="test"></div>
+</body>
 </html>

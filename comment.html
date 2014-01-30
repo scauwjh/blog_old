@@ -49,9 +49,6 @@
 		<!-- Main content
 		================================================== -->
 		<div class="container main-content">
-			<div class="back-to-top">
-				<a href="javascript:;" class="glyphicon glyphicon-circle-arrow-up"></a>
-			</div>
 			<div class="row">
 				<div class="col-lg-12 border box">
 					<div id="disqus_thread"></div>
@@ -69,7 +66,7 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script type="text/javascript" src="js/system/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/system/bootstrap.min.js"></script>
-
+		<script type="text/javascript" src="js/customer/customer-functions.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				var disqus_shortname = 'scauwjh';
@@ -80,6 +77,8 @@
 				//alert(123);
 				var obj = document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0];
                 obj.appendChild(dsq);
+                //add back to top icon
+                backToTopIcon();
 			});
 		</script>
 	</body>

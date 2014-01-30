@@ -55,10 +55,10 @@
         <!-- Main content
         ================================================== -->
         <div class="container main-content">
-            <div class="row" id="personal-intro">
-                <div class="col-lg-5 border box">
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-9">
+            <div class="row">
+                <div class="col-md-5 border box">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-9" id="personal-intro">
                         <h4>这就是我 —— wjh</h4>
                         <p>我喜欢编程，喜欢代码编织的世界</p>
                         <p>我喜欢运动，喜欢篮球、喜欢足球、喜欢跨栏</p> 
@@ -68,16 +68,25 @@
                         <p>我喜欢尝试各种新东西，对新技术充满好奇心</p>
                     </div>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 border box">
+                <div class="col-md-1"></div>
+                <div class="col-md-6 border box">
                 	<!-- person-carousel -->
                     <div id="person-carousel" class="carousel slide" data-ride="carousel">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 box border" id="works">
-                    
+                <div class="col-md-12 box border" id="camera">
+                	<div class="col-md-6 camera-font">
+                		<h1>关于摄影</h1>
+                		<p>
+                			我现在是根本没有什么摄影装备的，但我很喜欢摄影。从几年前开始，都是靠10年买的诺基亚5730来拍照的。
+                			当然5730也为我留下了很多美好的瞬间。现在翻回那些照片，都是感动满满的。所以我很像拥有一部单反。虽然我没什么摄影技术，但我觉得我并不追求什么技术，只求能很好的保留下我这一秒所见到的精彩瞬间、所见到的风景。
+                		</p>
+                	</div>
+                    <div class="col-md-6">
+                    	<img class="camera-theme-pic" src="img/camera/theme.png">
+                    </div>
                 </div>
             </div>
         </div><!--/.container-->
@@ -93,33 +102,6 @@
         <script type="text/javascript" src="js/system/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/system/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/customer/customer-functions.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                //header-carousel
-                var itemNum = 5;
-                var path = 'img/header-carousel/tmp';
-                var id = 'header-carousel';
-                var imgClass = 'header-carousel-img';
-                appendItem(path, id, itemNum, imgClass, true, true, null,null);
-                //person-carousel
-                path = 'img/person-carousel/intro';
-                id = 'person-carousel';
-                imgClass = 'person-img';
-                var itemDescClass = 'person-carousel-desc';
-                var itemDesc = new Array();
-                itemDesc[0] = '<h4>程序设计比赛</h4><p>2013年5月份参加省级acm程序设计大赛，图中可见队伍的名字SCAU_MonDaiNai，MonDaiNai是日语没问题的发音，寓意面对比赛，没问题！</p>';
-                itemDesc[1] = "<h4>110米跨栏比赛</h4><p>2012年10月份参加学院田径运动会，并在110米跨栏比赛中获得了第八名。</p>";
-                itemDesc[2] = "<h4>学院十佳体委</h4><p>2011至2012学年在班上担任体育委员一职，并在学年末获得了学院“十佳体委”和“阳光体育先进个人”的称号，班级也获得“阳光体育先进班级”荣誉称号。</p>";
-                itemDesc[3] = "<h4>程序设计比赛</h4><p>2013年5月份参加省级acm程序设计大赛，获得了铜牌。</p>";
-                itemDesc[4] = "<h4>各种奖励</h4><p>图中是2012至2013学年一年来所获得的奖励，有acm比赛，有科技创新比赛，有体委相关称号，还有担任院团委网络部副部长所获得的聘书。</p>";
-                appendItem(path, id, itemNum, imgClass, false, false, itemDesc, itemDescClass);
-                //click to next the carousel
-                $("#person-carousel").click(function(){
-                    $("#person-carousel").carousel('next');
-                });
-                //add back to top icon
-                backToTopIcon();
-            });
-        </script>
+        <script type="text/javascript" src="js/customer/index.js"></script>
     </body>
 </html>

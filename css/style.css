@@ -46,7 +46,7 @@ body{
 
 #person-carousel{
 	height:250px;
-	/*margin-left:-25px;*/
+	margin-left:-25px;
 }
 .person-img{
 	border-radius:3px;

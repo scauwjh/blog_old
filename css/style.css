@@ -48,16 +48,20 @@ body{
 
 #person-carousel{
 	height:250px;
-	margin-left:-10px;
+	margin-left:-15px;
 }
 #personal-intro{
 	margin-top:15px !important;
 }
 .person-img{
+	/*margin-top:1px;*/
 	border-radius:3px;
-	height:240px !important;
+	height:251px !important;
 	width:385px !important;
-	margin-top:5px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #868686;
 }
 .person-carousel-desc{
 	margin-top: 10px !important;
@@ -67,6 +71,9 @@ body{
 .person-carousel-desc h4{
 	color:#9a59b5;
 	text-align: center;
+}
+.person-carousel-desc p{
+	line-height:25px;
 }
 
 

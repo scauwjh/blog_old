@@ -26,7 +26,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">首页</a></li>
+                        <li class="active"><a href="javascript:;">首页</a></li>
                         <li><a href="javascript:;">博客</a></li>
                         <li><a href="javascript:;">动漫</a></li>
                         <li class="dropdown">
@@ -39,51 +39,66 @@
                         </li>
                         <li><a href="javascript:;">音乐</a></li>
                         <li><a href="javascript:;">视频</a></li>
-                        <li class="active"><a href="javascript:;">评论</a></li>
+                        <li><a href="comment.html">评论</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <!-- Header carousel
+        ================================================== -->
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            </ol>
+            <div class="carousel-inner" id="header_carousel_box">
+            </div>
+            <!-- carousel control -->
+            <a class="left carousel-control" href="#header-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#header-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div><!-- /.carousel -->
+
+
         <!-- Main content
         ================================================== -->
         <div class="container main-content">
+            <div class="row" id="personal-intro">
+                <div class="col-lg-5 border box">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-9">
+                        <h3>这就是我 —— wjh</h3>
+                        <p>我喜欢编程，喜欢代码编织的世界</p>
+                        <p>我喜欢运动，喜欢篮球、喜欢足球、喜欢跨栏</p> 
+                        <p>我喜欢动漫，喜欢二次元的纯真与美好</p>
+                        <p>我喜欢绘画，手绘出自己喜欢的二次元角色</p>
+                        <p>我喜欢摄影，从照片中，我可以看到不同的世界</p>
+                        <p>我喜欢尝试各种新东西，对新技术充满好奇心</p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 border box">
+                    <div id="person-carousel" class="carousel slide col-lg-9" data-ride="carousel">
+                        <div class="carousel-inner" id="person_carousel_box">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-12 border box">
-                    <div id="disqus_thread">
-
-                        <!-- Button trigger modal -->
-                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loading">
-                        Launch demo modal
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">正在拼命加载中...</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="progress progress-striped active">
-                                            <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal-dialog -->
-                        </div><!-- /.modal -->
+                <div class="col-lg-12 box border" id="program-works">
+                    <div id="disqus">
 
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!--/.container-->
 
-        <footer class="footer" rol="contentinfo">
+        <footer class="footer" style="background-color:#101010"  rol="contentinfo">
             <div class="container">
                 <p>XXXX</p>
                 <p>Design by @wjh</p>
@@ -93,28 +108,48 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
         <script type="text/javascript">
             $(document).ready(function(){
-                var disqus_shortname = 'scauwjh';
-                var dsq = document.createElement('script'); 
-                dsq.type = 'text/javascript'; 
-                dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                //alert(123);
-                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0])
-                            .appendChild(dsq);
-                // $(document).on(function(){
-                //     if ($("#disqus_thread").find('iframe').length>0)
-                //         alert(123);
-                // });
-                $("iframe").load(function(){
-                    alert(123);
+                //header-carousel
+                var path = 'img/header-carousel/tmp';
+                var id = 'header_carousel_box';
+                var imgClass = 'header-carousel-img-all';
+                appendItem(path, id, 5, imgClass, true);
+                //person-carousel
+                path = 'img/person-carousel/intro';
+                id = 'person_carousel_box';
+                imgClass = 'person-img';
+                appendItem(path, id, 5, imgClass, false);
+                //click to next the carousel
+                $("#person-carousel").click(function(){
+                    $("#person-carousel").carousel('next');
                 });
-                var str = '<div class="progress progress-striped active">';
-                str += '<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">';
-                str += '</div>';
-                str += '</div>';
+                /**
+                 * 添加轮播的item
+                 * @param path 路径，不含序号和图片后缀
+                 * @param id container id
+                 * @param itemNum item的个数，也就是轮播的图片的数量
+                 * @param imgClass 图片的class名
+                 * @param indicator 是否添加indicator，true or false
+                 */
+                function appendItem(path, id, itemNum, imgClass, indicator){
+                    for (var i = 0; i < itemNum; i++) {
+                        //add item
+                        var head = '<div class="item active">';
+                        var child = '<div class="item">';
+                        var item = (i==0)?(head):(child);
+                        item += '<img src="' + path + i + '.jpg" class="' + imgClass + '">';
+                        item += '</div>';
+                        $("#" + id).append(item);
+                        //add indicator
+                        if(indicator){
+                            head = '<li data-target="#header-carousel" data-slide-to="0" class="active"></li>';
+                            child = '<li data-target="#header-carousel" data-slide-to="' + i + '"></li>';
+                            item = (i==0)?(head):(child);
+                            $("#" + id).prev("ol").append(item);
+                        }
+                    }
+                }
             });
         </script>
     </body>

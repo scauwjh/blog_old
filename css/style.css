@@ -68,6 +68,8 @@ body{
 	color:#9a59b5;
 	text-align: center;
 }
+
+
 /*camera*/
 #camera{
 	margin-top:100px;
@@ -89,8 +91,18 @@ body{
 	line-height:38px;
 }
 .camera-font{
-	margin-top:35px;
+	margin-top:50px;
 }
+
+
+
+/*tmp*/
+#animation{
+	height:450px;
+	margin-top:100px;
+}
+
+
 
 /* footer */
 .footer{

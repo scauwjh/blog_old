@@ -42,34 +42,62 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	min-height:250px;
-	background-color:white;
+	background-color:#ffffff;
 	border-radius:5px;
 }
 
-#person-carousel{
-	height:250px;
-	margin-left:-14px;
-}
+
+/*personal*/
 #personal-intro{
-	margin-top:15px !important;
+	background-image:url(../img/personal-carousel/personal-intro-bg.png);
+	height:350px;
 }
-.person-img{
-	margin-top:1px;
-	border-radius:5px;
-	height:249px !important;
+.personal-intro-content{
+	margin-top:40px;
+	margin-left:60px;
+}
+#personal-intro h3{
+	-webkit-box-reflect:below -3px -webkit-gradient(linear, 0 0, 0 100%, 
+		from(transparent), color-stop(.5, transparent), to(white));
+	margin-bottom:35px;
+}
+#personal-intro p{
+	line-height:25px;
+}
+#personal-carousel{
+	background-image:url(../img/personal-carousel/personal-carousel-bg.png);
+	height:350px;
+}
+/*.personal-carousel-girl{
+	background-image:url(../img/personal-carousel/bg.png);
+	background-size:100% 100%;
+	margin-right:0px;
+	width:80px;
+	height:80px;
+	position:relative;
+	top:-100px;
+	right:50px;
+}*/
+.personal-img{
+	margin-top:15px;
+	/*border-radius:5px;*/
+	height:320px !important;
 	width:385px !important;
-	border:2px solid #ccc;
+	/*background:white;*/
+	border:1px solid #343434;
 }
-.person-carousel-desc{
+.personal-carousel-desc{
 	margin-top: 10px !important;
 	margin-left: -30px !important;
 	width: 175px;
+	height:249px;
+	/*border:2px solid #ccc;*/
 }
-.person-carousel-desc h4{
+.personal-carousel-desc h4{
 	color:#9a59b5;
 	text-align: center;
 }
-.person-carousel-desc p{
+.personal-carousel-desc p{
 	line-height:25px;
 }
 
@@ -80,8 +108,9 @@ body{
 	height:450px;
 }
 .camera-theme-pic{
-	/*background-image:url(img/camera/theme.jpg);
-	background-size:605px 450px;*/
+	background-image:url(../img/camera/theme.png);
+	background-size:100% 100%;
+	/*margin-right:0px;*/
 	width:570px;
 	height:448px;
 	border-radius:5px;

@@ -119,6 +119,14 @@ div{
 	margin-top:100px;
 	height:450px;
 }
+#camera h1{
+	margin-top:60px;
+	margin-left:30px;
+}
+#camera p{
+	margin-top:20px;
+	margin-left:30px;
+}
 .camera-pic{
 	background-image:url(../img/index/camera/theme.png);
 	background-size:100% 100%;
@@ -130,9 +138,7 @@ div{
 	margin-top:30px;
 	line-height:38px;
 }
-.camera-font{
-	margin-top:50px;
-}
+
 
 
 
@@ -154,6 +160,7 @@ div{
 }
 #animation p{
 	margin-top:30px;
+	margin-right:25px;
 	line-height:38px;
 }
 
@@ -180,6 +187,7 @@ div{
 }
 #works-carousel{
 	height:450px;
+	margin-left:5px;
 	text-align:center;
 }
 #works-carousel .carousel-inner{
@@ -189,14 +197,17 @@ div{
 .works-img{
 	border-radius:5px;
 	height:448px !important;
+	max-width:554px !important;
+
 }
 #works_control{
-	width:579px;
+	width:550px;
 	height:448px;
 	position:relative;
 	z-index:1;
-	left:20px;
+	left:19px;
 	border-left:1px solid #ccc;
+	/*border:1px solid #000;*/
 }
 #works_control a{
 	color:#463265;
@@ -216,7 +227,7 @@ div{
 	opacity: 1;
 }
 .works-control-left{
-	margin-left:-30px;
+	margin-left:-5px;
 }
 .works-control-right{
 	margin-left:440px;

@@ -6,6 +6,18 @@ body{
 .border{
 	border:1px solid #ccc;
 }
+h1{
+	-webkit-box-reflect:below -7px -webkit-gradient(linear, 0 0, 0 100%, 
+		from(transparent), color-stop(.5, transparent), to(white));
+}
+.delete{
+	text-decoration:line-through;
+}
+.invisible{
+	visibility:visible;
+	color:black;
+	background:black;
+}
 
 
 /* header-carousel */
@@ -49,7 +61,7 @@ body{
 
 /*personal*/
 #personal-intro{
-	background-image:url(../img/personal-carousel/personal-intro-bg.png);
+	background-image:url(../img/index/personal-carousel/personal-intro-bg.png);
 	height:350px;
 }
 .personal-intro-content{
@@ -65,7 +77,7 @@ body{
 	line-height:25px;
 }
 #personal-carousel{
-	background-image:url(../img/personal-carousel/personal-carousel-bg.png);
+	background-image:url(../img/index/personal-carousel/personal-carousel-bg.png);
 	height:350px;
 }
 /*.personal-carousel-girl{
@@ -107,17 +119,13 @@ body{
 	margin-top:100px;
 	height:450px;
 }
-.camera-theme-pic{
-	background-image:url(../img/camera/theme.png);
+.camera-pic{
+	background-image:url(../img/index/camera/theme.png);
 	background-size:100% 100%;
 	/*margin-right:0px;*/
 	width:570px;
 	height:448px;
 	border-radius:5px;
-}
-#camera h1{
-	-webkit-box-reflect:below -7px -webkit-gradient(linear, 0 0, 0 100%, 
-		from(transparent), color-stop(.5, transparent), to(white));
 }
 #camera p{
 	margin-top:30px;
@@ -134,7 +142,22 @@ body{
 	height:450px;
 	margin-top:100px;
 }
-
+.animation-pic{
+	background-image:url(../img/index/animation/misaka2.jpg);
+	background-size:100% 100%;
+	/*margin-right:0px;*/
+	width:570px;
+	height:448px;
+	margin-left:-30px;
+	border-radius:5px;
+}
+#animation h1{
+	margin-top:60px;
+}
+#animation p{
+	margin-top:30px;
+	line-height:38px;
+}
 
 /*painting*/
 #painting{

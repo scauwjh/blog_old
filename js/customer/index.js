@@ -1,13 +1,13 @@
 $(document).ready(function(){
     //header-carousel
     var itemNum = 6;
-    var path = 'img/header-carousel/tmp';
+    var path = 'img/index/header-carousel/tmp';
     var id = 'header-carousel';
     var imgClass = 'header-carousel-img';
     appendItem(path, id, itemNum, imgClass, true, true, null,null);
     //person-carousel
     itemNum = 5;
-    path = 'img/personal-carousel/intro';
+    path = 'img/index/personal-carousel/intro';
     id = 'personal-carousel';
     imgClass = 'personal-img';
     var itemDescClass = 'personal-carousel-desc';

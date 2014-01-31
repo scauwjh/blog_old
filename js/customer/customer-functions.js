@@ -1,5 +1,5 @@
 /**
- * 添加轮播的item
+ * 创建轮播
  * @param path 路径，不含序号和图片后缀
  * @param id container id
  * @param itemNum item的个数，也就是轮播的图片的数量
@@ -12,7 +12,7 @@
  * <div id="idName" class="carousel slide" data-ride="carousel"></div>
  * need jquery and bootstrap
  */
-function appendItem(path, id, itemNum, imgClass, indicator, control, itemDesc, itemDescClass){
+function createCarousel(path, id, itemNum, imgClass, indicator, control, itemDesc, itemDescClass){
     var items = '<div class="carousel-inner">';
     var indictors = '<ol class="carousel-indicators">';
     var controls = '';
@@ -20,11 +20,11 @@ function appendItem(path, id, itemNum, imgClass, indicator, control, itemDesc, i
     var child = '';
     for (var i = 0; i < itemNum; i++) {
         //add item
-        head = '<div class="item active row">';
-        child = '<div class="item row">';
+        head = (itemDesc != null) ? '<div class="item active row">' : '<div class="item active">';
+        child = (itemDesc != null) ? '<div class="item row">' : '<div class="item">';
 
         items += (i == 0) ? head : child;
-        items += (itemDesc != null)? '<div class="col-lg-9">' : '<div>';
+        items += (itemDesc != null) ? '<div class="col-lg-9">' : '<div>';
         items += '<img src="' + path + i + '.jpg" class="' + imgClass + '">';
         items += '</div>';
         if (itemDesc != null) {
@@ -71,7 +71,7 @@ function backToTopIcon(height){
     var str = "";
     str += '<div class="back-to-top">';
     str += '<a href="javascript:;" class="glyphicon glyphicon-circle-arrow-up back-icon"></a>';
-    str += '<p>返回顶部</p>';
+    str += '<p><a href="javascript:;">返回顶部</a></p>';
     str += '</div>';
     $("body").append(str);
     $(".back-to-top").css("display","none");

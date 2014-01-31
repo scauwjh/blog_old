@@ -5,7 +5,7 @@ css/bootstrap.min.css
 css/bootstrap-theme.css
 css/bootstrap-theme.min.css
 css/style.css
-js/customer/customer.js
+js/customer/comment.js
 js/customer/customer-functions.js
 js/customer/index.js
 js/system/bootstrap.js

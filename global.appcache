@@ -1,19 +1,19 @@
 CACHE MANIFEST
 #2014-2-1 12:40
-#css/bootstrap.css
-#css/bootstrap.min.css
-#css/bootstrap-theme.css
-#css/bootstrap-theme.min.css
-#css/style.css
-#js/customer/customer-functions.js
-#js/customer/comment.js
-#js/customer/index.js
-#js/system/bootstrap.js
-#js/system/bootstrap.min.js
-#js/system/html5shiv.js
-#js/system/jquery-1.10.2.min.js
-#js/system/jquery-1.11.0.min.js
-#js/system/respond.min.js
+css/bootstrap.css
+css/bootstrap.min.css
+css/bootstrap-theme.css
+css/bootstrap-theme.min.css
+css/style.css
+js/customer/customer-functions.js
+js/customer/comment.js
+js/customer/index.js
+js/system/bootstrap.js
+js/system/bootstrap.min.js
+js/system/html5shiv.js
+js/system/jquery-1.10.2.min.js
+js/system/jquery-1.11.0.min.js
+js/system/respond.min.js
 img/index/animation/misaka2.png
 img/index/camera/theme.png
 img/index/header-carousel/tmp0.jpg
@@ -34,7 +34,7 @@ img/index/works/works1.jpg
 img/index/works/works2.jpg
 img/index/works/works3.jpg
 img/index/works/works4.jpg
-#fonts/glyphicons-halflings-regular.eot
-#fonts/glyphicons-halflings-regular.svg
-#fonts/glyphicons-halflings-regular.ttf
-#fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff

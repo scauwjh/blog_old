@@ -1,17 +1,14 @@
 $(document).ready(function(){
-	// var dsq = document.createElement('script'); 
-	// dsq.type = 'text/javascript'; 
-	// dsq.async = true;
-	// dsq.src = 'http://scauwjh.disqus.com/embed.js';
-	// (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(dsq);
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'scauwjh'; // Required - Replace example with your forum shortname
 
-	var reqUrl = 'http://scauwjh.disqus.com/embed.js';
-	$.post(reqUrl,{},function(data){
-		comment = data;
-	});
-	
-	//alert(123);
-	
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    
     //add back to top icon
     backToTopIcon(1000);
 });

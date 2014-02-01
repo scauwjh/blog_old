@@ -76,7 +76,7 @@ function backToTopIcon(height){
     $("body").append(str);
     $(".back-to-top").css("display","none");
     $(document).mousemove(function(){
-        var y = documentElement.scrollTop;
+        var y = document.body.scrollTop;
         if(y > height) {
             $(".back-to-top").fadeIn();
         } else {

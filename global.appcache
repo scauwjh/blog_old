@@ -1,5 +1,6 @@
 CACHE MANIFEST
 #2014-2-1
+CACHE:
 css/bootstrap.css
 css/bootstrap.min.css
 css/bootstrap-theme.css
@@ -38,5 +39,5 @@ fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf
 fonts/glyphicons-halflings-regular.woff
 index.html
-NETWORK: comment.html
-NETWORK: http://scauwjh.disqus.com/embed.js
+NETWORK:
+*

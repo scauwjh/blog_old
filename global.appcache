@@ -7,8 +7,6 @@ css/bootstrap-theme.css
 css/bootstrap-theme.min.css
 css/style.css
 js/customer/customer-functions.js
-js/customer/index.js
-js/customer/comment.js
 js/system/bootstrap.js
 js/system/bootstrap.min.js
 js/system/html5shiv.js
@@ -38,6 +36,5 @@ fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf
 fonts/glyphicons-halflings-regular.woff
-index.html
 NETWORK:
 *

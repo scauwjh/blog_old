@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN" manifest="global.appcache">
+    <head>
+        <meta charset="utf-8">
+        <title>Website for wjh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <!-- customer css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="js/system/html5shiv.js"></script>
+            <script src="js/system/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- top navbar
+        ================================================== -->
+        <div class="navbar navbar-inverse navbar-top navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="javascript:;">wjh的个人网站</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="animation.html">动漫</a></li>
+                        <li class="active"><a href="photo.html">相册</a></li>
+                        <li><a href="music.html">音乐</a></li>
+                        <li><a href="video.html">视频</a></li>
+                        <li><a href="comment.html">评论</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container main-content">
+            <div class="row box border">
+                <div class="col-md-8" id="photo">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button id="full_screen_display" type="button" class="btn btn-success">浏览全部</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album1/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">手绘作品</a>
+                        </div>
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album2/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">摄影作品</a>
+                        </div>
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album3/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">动画</a>
+                        </div>
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album4/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">漫展</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album5/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">其他</a>
+                        </div>
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album6/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">待定</a>
+                        </div>
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album7/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">待定</a>
+                        </div>
+                        <div class="col-md-2 photo-box border">
+                            <div class="border photo-inner-box">
+                                <img src="img/photo/album8/cover.jpg" onerror="javascript:this.src='img/photo/nopic.jpg'">
+                            </div>
+                            <a href="javascript:;" class="album-title">待定</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 border" id="photo_carousel_box">
+                    <div id="photo_carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer" style="background-color:#101010"  rol="contentinfo">
+            <div class="container">
+                <p>XXXX</p>
+                <p>Design by @wjh</p>
+            </div>
+        </footer>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="js/system/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/system/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/customer/customer-functions.js"></script>
+        <script type="text/javascript" src="js/customer/photo.js"></script>
+    </body>
+</html>

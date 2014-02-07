@@ -12,6 +12,7 @@ js/system/bootstrap.min.js
 js/system/html5shiv.js
 js/system/jquery-1.10.2.min.js
 js/system/respond.min.js
+img/bg.png
 img/index/animation/misaka2.png
 img/index/camera/theme.png
 img/index/header-carousel/tmp0.jpg
@@ -36,5 +37,14 @@ fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf
 fonts/glyphicons-halflings-regular.woff
+img/photo/nopic.jpg
+img/photo/album1/cover.jpg
+img/photo/album2/cover.jpg
+img/photo/album3/cover.jpg
+img/photo/album4/cover.jpg
+img/photo/album1/*
+img/photo/album2/*
+img/photo/album3/*
+img/photo/album4/*
 NETWORK:
 *

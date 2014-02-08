@@ -89,3 +89,13 @@ function backToTopIcon(height){
         $("body").animate({scrollTop:0});                
     });
 }
+
+/**
+ * need to add the css with the name : 'full-screen-shade'
+ * need jquery
+ */
+function fullScreenShade(){
+    var html = '<div class="full-screen-shade">';
+    html += '</div>';
+    $("body").append(html);
+}

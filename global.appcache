@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2014-2-7
+#2014-2-8
 CACHE:
 css/bootstrap.css
 css/bootstrap.min.css
@@ -12,7 +12,7 @@ js/system/bootstrap.min.js
 js/system/html5shiv.js
 js/system/jquery-1.10.2.min.js
 js/system/respond.min.js
-img/bg.png
+img/bg.jpg
 img/index/animation/misaka2.png
 img/index/camera/theme.png
 img/index/header-carousel/tmp0.jpg

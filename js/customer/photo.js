@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var group = new Array();
 	fileNum[0] = 5;
 	fileNum[1] = 18;
-	fileNum[2] = 67;
+	fileNum[2] = 66;
 	fileNum[3] = 11;
 	var str = "";
 	var path = "";

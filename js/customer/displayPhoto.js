@@ -70,12 +70,12 @@ $(document).ready(function(){
 	$("#photo_prev_page").click(function(){
 		if (page > 1)
 			page--;
-		top.location.href = 'displayPhoto.html?albumName=' + albumName + '&albumId=' + albumId + '&picNum=' + picNum + '&page=' + page;
+		top.location.href = 'displayPhoto.html?albumName=' + encodeURI(albumName) + '&albumId=' + albumId + '&picNum=' + picNum + '&page=' + page;
 	});
 	$("#photo_next_page").click(function(){
 		if(page < allPage)
 			page++;
-		top.location.href = 'displayPhoto.html?albumName=' + albumName + '&albumId=' + albumId + '&picNum=' + picNum + '&page=' + page;
+		top.location.href = 'displayPhoto.html?albumName=' + encodeURI(albumName) + '&albumId=' + albumId + '&picNum=' + picNum + '&page=' + page;
 	});
 	/* add the full screen shade for displaying picture */
 	fullScreenShade();

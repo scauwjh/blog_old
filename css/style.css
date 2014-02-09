@@ -1,3 +1,6 @@
+*{
+	font-family:Georgia;
+}
 html,body{
 	height:100%;
 }
@@ -201,7 +204,6 @@ h1{
 #works{
 	min-height:450px;
 	margin-top:100px;
-	margin-bottom:80px;
 	background-image:url(../img/index/title/works.png);
 	background-size:100px 131px;
 	background-repeat:no-repeat;
@@ -275,6 +277,7 @@ h1{
 .footer{
 	background-color:#101010;
 	height: 60px;
+	margin-top:80px;
 }
 
 
@@ -332,6 +335,20 @@ h1{
 }
 .photo-top-bar{
 	height:40px;
+	/* Firefox */
+	background-image: -moz-linear-gradient(top, #ffffff, #d6eaa2); 
+	/* Saf4+, Chrome */
+	background-image: -webkit-gradient(linear, left top, left bottom,
+						color-stop(0, #ffffff), color-stop(1, #d6eaa2));
+	/* IE*/
+	filter: progid:DXImageTransform.Microsoft.gradient(
+				startColorstr='#ffffff', endColorstr='#d6eaa2', GradientType='0');
+}
+.photo-top-bar span{
+	line-height:40px;
+	margin-left:20px;
+	font-size:14px;
+	color:#333333;
 }
 .photo-box{
 	height:147px;

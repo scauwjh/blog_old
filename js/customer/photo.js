@@ -3,6 +3,9 @@ $(document).ready(function(){
 	var albumNum = 4;
 	var picNum = new Array();
 	var group = new Array();
+	var albumName = new Array();
+	for (var i = 0; i < 8; i++)
+		albumName[i] = $(".album-title:eq("+ i +")").html();
 	picNum[0] = 5;// album1
 	picNum[1] = 18;// album2
 	picNum[2] = 65;// album3
@@ -53,13 +56,15 @@ $(document).ready(function(){
 		var j = $(this).parents(".photo-box").index();
 		var n = i * 4 + j + 1;
 		// alert(n);
-		top.location.href = "displayPhoto.html?id=" + n + '&picNum=' + picNum[n-1] + '&page=1';
+		var jumpUrl = 'displayPhoto.html?albumName=' + encodeURI(albumName[n-1]) + '&albumId=' + n + '&picNum=' + picNum[n-1] + '&page=1';
+		top.location.href = jumpUrl;
 	});
 	$(".album-title").click(function(){
 		var i = $(this).parents(".row").index();
 		var j = $(this).parents(".photo-box").index();
 		var n = i * 4 + j + 1;
 		// alert(n);
-		top.location.href = "displayPhoto.html?id=" + n + '&picNum=' + picNum[n-1] + '&page=1';
+		var jumpUrl = 'displayPhoto.html?albumName=' + encodeURI(albumName[n-1]) + '&albumId=' + n + '&picNum=' + picNum[n-1] + '&page=1';
+		top.location.href = jumpUrl;
 	});
 });

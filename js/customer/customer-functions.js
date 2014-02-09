@@ -99,3 +99,39 @@ function fullScreenShade(){
     html += '</div>';
     $("body").append(html);
 }
+
+
+/**
+ * Map for javascript
+ * function: get(key) put(key, value)
+ *  other function will add
+ * example: 
+ *  var map = new Map();
+ *  map.put("a","test");
+ *  var tmp = map.get("a");
+ */
+function Map(){
+    var struct = function(key, value){
+        this.key = key;
+        this.value = value;
+    }
+    var put = function(key, value){
+        for (var i = 0; i < this.arr.length; i++) {
+            if (this.arr[i].key === key) {
+                this.arr[i].value = value;
+                return;
+            }
+        }
+        this.arr[this.arr.length] = new struct(key, value);
+    }
+    var get = function(key){
+        for(var i = 0; i < this.arr.length; i++) {
+            if(this.arr[i].key === key)
+                return this.arr[i].value;
+        }
+        return null;
+    }
+    this.arr = new Array();
+    this.put = put;
+    this.get = get;
+}

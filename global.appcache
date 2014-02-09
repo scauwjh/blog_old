@@ -1,17 +1,18 @@
 CACHE MANIFEST
 #2014-2-9
 CACHE:
+#css
 css/bootstrap.css
 css/bootstrap.min.css
 css/bootstrap-theme.css
 css/bootstrap-theme.min.css
-css/style.css
-js/customer/customer-functions.js
+#js
 js/system/bootstrap.js
 js/system/bootstrap.min.js
 js/system/html5shiv.js
 js/system/jquery-1.10.2.min.js
 js/system/respond.min.js
+#picture
 img/bg.jpg
 img/index/animation/misaka2.png
 img/index/camera/theme.png

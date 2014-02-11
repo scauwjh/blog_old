@@ -174,7 +174,7 @@ function getParameters(){
 /**
  * add a comment board into the page
  */
-function addCooment(shortName){
+function addComment(shortName){
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = shortName; // Required - Replace example with your forum shortname
 

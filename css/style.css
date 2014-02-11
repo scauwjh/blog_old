@@ -30,10 +30,6 @@ body{
 .clear{
 	clear:both;
 }
-h1{
-	-webkit-box-reflect:below -7px -webkit-gradient(linear, 0 0, 0 100%, 
-		from(transparent), color-stop(.5, transparent), to(white));
-}
 .delete{
 	text-decoration:line-through;
 }
@@ -98,9 +94,7 @@ h1{
 	margin-left:80px;
 }
 #personal-intro h3{
-	-webkit-box-reflect:below -3px -webkit-gradient(linear, 0 0, 0 100%, 
-		from(transparent), color-stop(.5, transparent), to(white));
-	margin-bottom:35px;
+	margin-bottom:20px;
 }
 #personal-intro p{
 	line-height:25px;

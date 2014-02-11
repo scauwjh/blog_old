@@ -42,7 +42,9 @@ h1{
 	color:black;
 	background:black;
 }
-
+.comment-box{
+	height:200px;
+}
 
 /* header-carousel */
 #header-carousel{

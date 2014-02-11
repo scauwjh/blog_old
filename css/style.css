@@ -335,6 +335,7 @@ h1{
 }
 .photo-top-bar{
 	height:40px;
+	border-bottom:1px solid #d6eaa2;
 	/* Firefox */
 	background-image: -moz-linear-gradient(top, #ffffff, #d6eaa2); 
 	/* Saf4+, Chrome */

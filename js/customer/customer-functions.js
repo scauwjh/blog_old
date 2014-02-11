@@ -103,7 +103,7 @@ function fullScreenShade(){
 
 /**
  * Map for javascript
- * function: get(key) put(key, value)
+ * function: get(key) put(key, value) size()
  *  other function will add
  * example: 
  *  var map = new Map();
@@ -131,7 +131,57 @@ function Map(){
         }
         return null;
     }
+    var size = function(){
+        return this.arr.length;
+    }
     this.arr = new Array();
     this.put = put;
     this.get = get;
+    this.size = size;
+}
+
+
+
+/**
+ * get url parameters
+ */
+function getParameters(){
+    var str = window.location.search;
+    var map = new Map();
+    params = new Array();
+    str = decodeURI(str);
+    params = str.split("=");
+    /* substring the param then put the key and value into a map */
+    var name = null;
+    var key = null;
+    for (var i = 0; i < params.length; i++){
+        if (i == 0) {
+            name = params[i].substring(1, params[i].length);
+            continue;
+        }
+        var end = params[i].indexOf("&");
+        if(end == -1) {
+            end = params[i].length;
+        }
+        key = params[i].substring(0, end);
+        map.put(name, key);
+        name = params[i].substring(end + 1, params[i].length);
+    }
+    return map;
+}
+
+
+/**
+ * add a comment board into the page
+ */
+function addCooment(shortName){
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = shortName; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 }

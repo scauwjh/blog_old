@@ -67,4 +67,5 @@ $(document).ready(function(){
 		var jumpUrl = 'displayPhoto.html?albumName=' + encodeURI(albumName[n-1]) + '&albumId=' + n + '&picNum=' + picNum[n-1] + '&page=1';
 		top.location.href = jumpUrl;
 	});
+	addComment('scauwjh');
 });

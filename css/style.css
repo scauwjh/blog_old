@@ -386,6 +386,9 @@ h1{
 	margin-top:15px;
 	/*border:1px solid #ccc;*/
 }
+.photo-container .comment-box{
+	margin-top:50px;
+}
 
 /*displayPhoto*/
 #display_photo{

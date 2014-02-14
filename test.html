@@ -1,23 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title></title>
-    <script type="text/javascript" src="js/system/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $(".test").click(function(){
-            //alert(123);
-            $("body").animate({scrollTop:0});
-        });
-    });
-    </script>
-    <style type="text/css">
-        .test{
-            background-image:url(img/tmp.jpg);
-        }
-    </style>
+<script type="text/javascript">
+function WebSocketTest()
+{
+  if ("WebSocket" in window)
+  {
+     alert("WebSocket is supported by your Browser!");
+     // Let us open a web socket
+     var ws = new WebSocket("ws://localhost:9998/echo");
+     ws.onopen = function()
+     {
+        // Web Socket is connected, send data using send()
+        ws.send("Message to send");
+        alert("Message is sent...");
+     };
+     ws.onmessage = function (evt)
+     {
+        var received_msg = evt.data;
+        alert("Message is received...");
+     };
+  }
+  else
+  {
+     // The browser doesn't support WebSocket
+     alert("WebSocket NOT supported by your Browser!");
+  }
+}
+function closeTest(){
+	ws.onclose = function()
+     {
+        // websocket is closed.
+        alert("Connection is closed...");
+     };
+}
+</script>
 </head>
 <body>
-    <div style="width:100%;height:1500px;" class="test"></div>
+<div id="sse">
+   <a href="javascript:WebSocketTest()">Run WebSocket</a>
+   <a href="javascript:closeTest()">Run WebSocket</a>
+</div>
 </body>
 </html>

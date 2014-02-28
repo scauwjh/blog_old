@@ -35,5 +35,5 @@ $(document).ready(function(){
     });
     
     /* add back to top icon */
-    backToTopIcon(1000);
+    //backToTopIcon(1000);
 });

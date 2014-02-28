@@ -1,16 +1,5 @@
 CACHE MANIFEST
 #2014-2-28 16:27
-#css
-css/bootstrap.css
-css/bootstrap.min.css
-css/bootstrap-theme.css
-css/bootstrap-theme.min.css
-#js
-js/system/bootstrap.js
-js/system/bootstrap.min.js
-js/system/html5shiv.js
-js/system/jquery-1.11.0.min.js
-js/system/respond.min.js
 #picture
 img/bg.jpg
 img/index/animation/misaka.png

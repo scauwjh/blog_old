@@ -1,6 +1,3 @@
-/* to include the map function file */
-include("js/customer/map.js");
-alert(location.href);
 /**
  * 创建轮播
  * @param path 路径，不含序号和图片后缀
@@ -152,6 +149,7 @@ function getParameters() {
 /**
  * user's include
  * script will to the end of body
+ * this is hard to use for different path
  */
 function include(jsUrl) {
     if (jsUrl == null || typeof(jsUrl) != 'string') return;

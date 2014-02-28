@@ -29,10 +29,10 @@ $(document).ready(function(){
 		if (end > tmpNum + 1)
 			end = tmpNum + 1;
 		for (var i = start; i < end; i++) {
-			path = 'img/photo/album' + albumId + '/' + i + '.jpg';
+			path = '../img/photo/album' + albumId + '/' + i + '.jpg';
 			str += '<div class="display-img float-left">';
 			str += '<a href="javascript:;" class="thumbnail">';
-			str += '<img src="' + path + '" onerror="javascript:this..parentNode.parentNode.style.display=\'none\'">';
+			str += '<img src="' + path + '" onerror="javascript:this.parentNode.parentNode.style.display=\'none\'">';
 			str += '</a>';
 			str += '</div>';
 		}
@@ -95,7 +95,7 @@ $(document).ready(function(){
 				divId--;
 				picId--;
 			}
-			var src = "img/photo/album" + albumId + '/' + picId + '.jpg';
+			var src = "../img/photo/album" + albumId + '/' + picId + '.jpg';
 			$(".full-screen-display img").attr("src",src);
 			$(".full-screen-display img").fadeIn();
 		});

@@ -29,7 +29,8 @@ function createCarousel(path, id, itemNum, imgClass, indicator, control, itemDes
         items += '</div>';
         if (itemDesc != null) {
             items += '<div class="col-lg-3 ' + itemDescClass + '">';
-            items += '<p>' + itemDesc[i] + '</p>';
+            items += '<h4>' + itemDesc[i].title + '</h4>';
+            items += '<p>' + itemDesc[i].content + '</p>';
             items += '</div>';
         }
         items += '</div>';//end head or child

@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
+    /* struct of the desc */
+    function Desc() {
+        this.title = null;
+        this.content = null;
+    }
     /* read configure from xml file */
-    
     var url = 'configure/index.xml';
     $.get(url,"",function(data){
         $(data).find('module').each(function(){
@@ -17,7 +21,10 @@ $(document).ready(function(){
             } else {
                 var i = 0;
                 $(this).children('itemDescArray').children('itemDesc').each(function(){
-                    itemDesc[i++] = $(this).text();
+                    var desc = new Desc();
+                    desc.title = $(this).children('title').text();
+                    desc.content = $(this).children('content').text();
+                    itemDesc[i++] = desc;
                     // alert(itemDesc[i-1]);
                 });
             }

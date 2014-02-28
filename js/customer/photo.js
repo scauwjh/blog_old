@@ -32,7 +32,7 @@ $(document).ready(function(){
 		}
 		count--;
 		//alert(folder+ "," + file);
-		path = 'img/photo/album' + folder + '/' + file + '.jpg';
+		path = '../img/photo/album' + folder + '/' + file + '.jpg';
 		if (i == 0) {
 			str = '<div class="item active">';
 		} else{
@@ -42,7 +42,7 @@ $(document).ready(function(){
 		// str += 'background-size:auto 368px;margin-top:15px;width:368px;height:368px;"></div>';
 		str += '<div style="width:380px;height:380px;text-align:center">';
 		str += '<img src="' + path + '"';
-		var errorPaht = 'javascript:this.src=\'img/photo/nopic.jpg';
+		var errorPaht = 'javascript:this.src=\'../img/photo/nopic.jpg';
 		str += 'onerror="'+ errorPaht + '?album=' + folder + '&file=' + file + '\'" class="photo-carousel-img">';
 		str += '</div>';
 		str += '</div>';

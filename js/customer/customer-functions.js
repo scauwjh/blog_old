@@ -1,10 +1,13 @@
+/* to include the map function file */
+include("js/customer/map.js");
+alert(location.href);
 /**
  * 创建轮播
  * @param path 路径，不含序号和图片后缀
  * @param id container id
  * @param itemNum item的个数，也就是轮播的图片的数量
  * @param imgClass 图片的class名
- * @param indicator 是否添加indicator，true or false
+ * @param indicator 是否添加indicator(图片轮播显示图标)，true or false
  * @param control 是否添加control，true or false
  * @param itemDesc item说明，array or null
  * @param itemDescClass item说明css
@@ -102,50 +105,26 @@ function fullScreenShade(){
 
 
 /**
- * Map for javascript
- * function: get(key) put(key, value) size()
- *  other function will add
- * example: 
- *  var map = new Map();
- *  map.put("a","test");
- *  var tmp = map.get("a");
+ * add a comment board into the page
  */
-function Map(){
-    var struct = function(key, value){
-        this.key = key;
-        this.value = value;
-    }
-    var put = function(key, value){
-        for (var i = 0; i < this.arr.length; i++) {
-            if (this.arr[i].key === key) {
-                this.arr[i].value = value;
-                return;
-            }
-        }
-        this.arr[this.arr.length] = new struct(key, value);
-    }
-    var get = function(key){
-        for(var i = 0; i < this.arr.length; i++) {
-            if(this.arr[i].key === key)
-                return this.arr[i].value;
-        }
-        return null;
-    }
-    var size = function(){
-        return this.arr.length;
-    }
-    this.arr = new Array();
-    this.put = put;
-    this.get = get;
-    this.size = size;
-}
+function addComment(shortName){
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = shortName; // Required - Replace example with your forum shortname
 
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+}
 
 
 /**
  * get url parameters
+ * need to include map.js(user function)
  */
-function getParameters(){
+function getParameters() {
     var str = window.location.search;
     var map = new Map();
     params = new Array();
@@ -170,18 +149,15 @@ function getParameters(){
     return map;
 }
 
-
 /**
- * add a comment board into the page
+ * user's include
+ * script will to the end of body
  */
-function addComment(shortName){
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = shortName; // Required - Replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+function include(jsUrl) {
+    if (jsUrl == null || typeof(jsUrl) != 'string') return;
+    var js = document.createElement('script');
+    js.type = 'text/javascript';
+    js.src = jsUrl;
+    $.ajaxSetup({ cache : true });
+    $('body').append(js);
 }

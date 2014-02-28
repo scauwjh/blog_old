@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     /* read configure from xml file */
     var url = 'configure/index.xml';
-    $.get(url,"",function(data){
+    $.post(url,"",function(data){
         $(data).find('module').each(function(){
             var path = $(this).children('path').html();// necessary param
             var id = $(this).children('id').html();// necessary param

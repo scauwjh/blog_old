@@ -9,7 +9,7 @@ css/bootstrap-theme.min.css
 js/system/bootstrap.js
 js/system/bootstrap.min.js
 js/system/html5shiv.js
-js/system/jquery-1.10.2.min.js
+js/system/jquery-1.11.0.min.js
 js/system/respond.min.js
 #picture
 img/bg.jpg

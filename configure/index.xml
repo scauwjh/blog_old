@@ -6,8 +6,7 @@
 		<id>header-carousel</id>
 		<imgClass>header-carousel-img</imgClass>
 		<itemDescClass>0</itemDescClass>
-		<itemDescArray>
-		</itemDescArray>
+		<itemDescArray></itemDescArray>
 		<control>1</control>
 		<indicator>1</indicator>
 	</module>

@@ -163,31 +163,23 @@
 			"file": "js/customer/index.js",
 			"settings":
 			{
-				"buffer_size": 1726,
+				"buffer_size": 1811,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/customer/test.js",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2483,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/customer/customer-functions.js",
-			"settings":
-			{
-				"buffer_size": 6725,
+				"buffer_size": 7121,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "configure/index.xml",
+			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 1570,
+				"buffer_size": 8231,
 				"line_ending": "Windows"
 			}
 		}
@@ -219,13 +211,31 @@
 	},
 	"file_history":
 	[
+		"/D/Codes/Git/blog/js/customer/displayPhoto.js",
+		"/D/Codes/Git/blog/js/customer/customer-functions.js",
+		"/D/Codes/Git/blog/index.appcache",
+		"/D/Codes/Git/blog/photo.appcache",
+		"/D/Codes/Git/blog/js/customer/index.js",
+		"/D/Codes/Git/blog/html/animation.html",
+		"/D/Codes/Git/blog/html/photo.html",
+		"/D/Codes/Git/blog/html/blog.html",
+		"/D/Codes/Git/blog/html/comment.html",
+		"/D/Codes/Git/blog/html/displayPhoto.html",
+		"/D/Codes/Git/blog/html/music.html",
+		"/D/Codes/Git/blog/html/video.html",
+		"/D/Codes/Git/blog/global.appcache",
+		"/D/Codes/Git/blog/js/customer/map.js",
+		"/D/Codes/Git/blog/css/style.css",
+		"/D/Codes/Git/blog/configure/index.xml",
+		"/D/Codes/Git/blog/displayPhoto.html",
+		"/D/Codes/Git/blog/js/customer/photo.js",
+		"/D/Codes/Git/blog/index.html",
+		"/D/Codes/Git/blog/js/customer/map.old.js",
+		"/D/Codes/Git/blog/js/customer/test.js",
 		"/C/Users/asus/AppData/Roaming/Sublime Text 3/Packages/User/javascript.sublime-build",
 		"/C/menu.lst",
 		"/E/软件/linux/install linux/menu.lst",
 		"/D/Codes/Git/blog/configure/configure.xml",
-		"/D/Codes/Git/blog/index.html",
-		"/D/Codes/Git/blog/css/style.css",
-		"/D/Codes/Git/blog/global.appcache",
 		"/D/Codes/C++/sublimeText/test.cpp",
 		"/D/Codes/Git/blog/test.html",
 		"/E/软件/linux/install linux/initrd.lz",
@@ -233,14 +243,9 @@
 		"/D/Codes/Git/blog/music.html",
 		"/D/Codes/Git/blog/video.html",
 		"/D/Codes/Git/blog/js/customer/comment.js",
-		"/D/Codes/Git/blog/js/customer/index.js",
-		"/D/Codes/Git/blog/js/customer/customer-functions.js",
-		"/D/Codes/Git/blog/js/customer/photo.js",
 		"/D/Codes/Git/blog/comment.html",
 		"/D/Codes/Git/blog/photo.html",
 		"/D/Codes/Git/blog/blog.html",
-		"/D/Codes/Git/blog/js/customer/displayPhoto.js",
-		"/D/Codes/Git/blog/displayPhoto.html",
 		"/C/Users/asus/Desktop/test.js",
 		"/C/Users/asus/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-build",
 		"/C/Program Files/Sublime Text 3/sublime.py",
@@ -248,7 +253,6 @@
 		"/D/Codes/Java/eclipse/tvprotal.bkp/TVProtal - 副本8月1日/src/com/workbench/tvprotal/servlet/UpdateTvList.java",
 		"/D/Codes/Git/blog/css/index.css",
 		"/D/Codes/Java/eclipse/myweixin/WebContent/css/global.css",
-		"/D/Codes/Git/blog/index.appcache",
 		"/D/Codes/Git/blog/js/customer/carousel.js",
 		"/C/Users/asus/Desktop/a.html",
 		"/C/Users/asus/Desktop/tmp/test/test.html",
@@ -274,6 +278,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"replace",
+			"img/photo/",
+			"map",
+			"}\n",
+			"getParameters",
+			"map",
 			"			\n",
 			"console",
 			"){\n",
@@ -329,6 +339,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"../img/photo/",
 			"itemDescArr",
 			"itemDescClass",
 			"itemNum",
@@ -352,7 +363,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -361,15 +372,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1726,
+						"buffer_size": 1811,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1661,
-								1661
+								1595,
+								1595
 							]
 						],
 						"settings":
@@ -380,96 +391,68 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/customer/test.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2483,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								2483
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1425.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "js/customer/customer-functions.js",
+					"buffer": 1,
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6725,
+						"buffer_size": 7121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5305,
-								5305
+								6854,
+								6854
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2622.0,
+						"translation.y": 2394.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "configure/index.xml",
+					"buffer": 2,
+					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1570,
+						"buffer_size": 8231,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3487,
+								3487
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -551,7 +534,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 169.0,
+	"side_bar_width": 170.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

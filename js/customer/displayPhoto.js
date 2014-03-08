@@ -82,7 +82,7 @@ $(document).ready(function(){
 			if (divId > 0)
 				divId--;
 			picId = (page - 1) * 12 + divId + 1;
-			var src = "img/photo/album" + albumId + '/' + picId + '.jpg';
+			var src = "../img/photo/album" + albumId + '/' + picId + '.jpg';
 			$(".full-screen-display img").attr("src",src);
 			$(".full-screen-display img").fadeIn();
 		});

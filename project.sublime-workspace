@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"print",
+				"printLink"
+			],
+			[
 				"item",
 				"itemNum"
 			],
@@ -159,32 +163,8 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "js/customer/index.js",
-			"settings":
-			{
-				"buffer_size": 1811,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 7121,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 8231,
-				"line_ending": "Windows"
-			}
-		}
 	],
-	"build_system": "Packages/User/javascript.sublime-build",
+	"build_system": "Packages/C++/C++.sublime-build",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -211,6 +191,29 @@
 	},
 	"file_history":
 	[
+		"/D/Codes/Git/test/index.html",
+		"/D/Codes/Git/test/_posts/2014-03-08-welcome-to-jekyll.markdown",
+		"/D/Codes/C++/sublimeText/linkList/linkList.cpp",
+		"/D/Codes/C++/sublimeText/test/test.cpp",
+		"/D/Codes/Java/eclipse/Test/src/com/FormPost.java",
+		"/D/Codes/C++/sublimeText/test/test.c",
+		"/D/Codes/C++/sublimeText/test.cpp",
+		"/C/Users/asus/.ssh/config",
+		"/D/Codes/C++/sublimeText/binarySearch/binarySearch.cpp",
+		"/D/Codes/C++/sublimeText/二分/binarySearch",
+		"/C/Users/asus/Desktop/ExecuteSQL.java",
+		"/C/Users/asus/Desktop/[path",
+		"/C/Users/asus/Desktop/update.java",
+		"/D/Codes/Java/MyEclipse/weixin/src/resource/applicationContext-bean.xml",
+		"/D/Codes/Java/MyEclipse/weixin/src/spring-config/spring-booking.xml",
+		"/D/Codes/Java/eclipse/myweixin/src/cn/edu/scau/tvprotal/debug/authorize/InitRoot.java",
+		"/D/Codes/Java/eclipse/myweixin/src/cn/edu/scau/tvprotal/core/Configurator.java",
+		"/D/Codes/Java/eclipse/myweixin/src/cn/edu/scau/tvprotal/core/authorize/Authorizer.java",
+		"/D/Codes/Java/MyEclipse/weixin/updateServer/140302.sql",
+		"/D/Codes/C++/sublimeText/shape/shap.cpp",
+		"/D/Codes/Git/blog/css/style.css",
+		"/D/Codes/Git/blog/index.html",
+		"/D/Codes/Git/blog/js/customer/map.js",
 		"/D/Codes/Git/blog/js/customer/displayPhoto.js",
 		"/D/Codes/Git/blog/js/customer/customer-functions.js",
 		"/D/Codes/Git/blog/index.appcache",
@@ -224,19 +227,15 @@
 		"/D/Codes/Git/blog/html/music.html",
 		"/D/Codes/Git/blog/html/video.html",
 		"/D/Codes/Git/blog/global.appcache",
-		"/D/Codes/Git/blog/js/customer/map.js",
-		"/D/Codes/Git/blog/css/style.css",
 		"/D/Codes/Git/blog/configure/index.xml",
 		"/D/Codes/Git/blog/displayPhoto.html",
 		"/D/Codes/Git/blog/js/customer/photo.js",
-		"/D/Codes/Git/blog/index.html",
 		"/D/Codes/Git/blog/js/customer/map.old.js",
 		"/D/Codes/Git/blog/js/customer/test.js",
 		"/C/Users/asus/AppData/Roaming/Sublime Text 3/Packages/User/javascript.sublime-build",
 		"/C/menu.lst",
 		"/E/软件/linux/install linux/menu.lst",
 		"/D/Codes/Git/blog/configure/configure.xml",
-		"/D/Codes/C++/sublimeText/test.cpp",
 		"/D/Codes/Git/blog/test.html",
 		"/E/软件/linux/install linux/initrd.lz",
 		"/D/Codes/Git/blog/animation.html",
@@ -264,7 +263,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -278,6 +277,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			" <<",
+			"* ",
+			"function",
+			"</p>",
+			"<p>",
+			"h4",
+			");\n",
 			"replace",
 			"img/photo/",
 			"map",
@@ -339,6 +345,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"*",
+			"</content>",
+			"<content>",
+			"title",
 			"../img/photo/",
 			"itemDescArr",
 			"itemDescClass",
@@ -360,107 +370,24 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\Codes\\Git\\blog"
+		}
+	],
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/customer/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1811,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1595,
-								1595
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7121,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6854,
-								6854
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2394.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3487,
-								3487
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3165.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -491,16 +418,16 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 324.0
+		"height": 326.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"project": "website.sublime-project",
+	"project": "",
 	"replace":
 	{
-		"height": 64.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":

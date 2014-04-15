@@ -5,6 +5,8 @@ $(document).ready(function(){
         this.title = null;
         this.content = null;
     }
+
+
     /* read configure from xml file */
     var url = 'configure/index.xml';
     $.get(url,"",function(data){

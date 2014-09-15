@@ -9,7 +9,7 @@
  */
 function Map() {
 	var tree = new Array();
-	var MOD = 1000000007;
+	var MOD = 100000007;
 	function node() {
 		this.key = null;
 		this.val = null;

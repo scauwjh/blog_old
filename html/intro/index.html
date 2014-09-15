@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+	html,body{
+		height:100%;
+		margin:0px;
+		padding:0px;
+	}
+	#container{
+		width:100%;
+		height:100%;
+	}
+	#display{
+		width:1000px;
+		height:100%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.item-content{
+		height:800px;
+		width:500px;
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:250px;
+	}
+	.float{
+		line-height:800px;
+		float:left;
+	}
+	#screen{
+		width:800px;
+	}
+	.control{
+		opacity:0.1;
+		filter:alpha(opacity=10);
+	}
+	.control:hover{
+		opacity:1;
+		filter:alpha(opacity=100);
+	}
+	.invisible{
+		visibility:visible;
+		color:black;
+		background:black;
+	}
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<!-- Carousel
+		================================================== -->
+		<div id="display" class="carousel slide" data-ride="carousel">
+
+			<div class="float control">
+				<a class="left" href="#display" data-slide="prev">
+					<button type="button" class="btn btn-lg btn-success">PREV</button>
+				</a>
+			</div>
+
+			<div id="screen" class="carousel-inner float">
+				
+				<div class="item active">
+					<div class="item-content">
+						<h1>伍景辉 (Kei)</h1>
+						<h1>计算机科学与技术</h1>
+						<h1>初级程序员</h1>
+						<h1>QQ472174314</h1>
+						<h1 class="invisible">闷骚男一个</h1>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item-content">
+						<h1>懵懂的大一新生</h1>
+						<h3>
+							刚上大学，基本上什么都不懂，IT方面除了会装个电脑系统外，其他都是一无所知。刚接触编程，我就喜欢上了她了，第一次使用C语言在控制台的黑框上打印出HelloWorld时，我是挺激动的。大一时加入了团学的网络部，那段日子挺有意义的，能学到技术，也能体验到社团的生活，也学到了很多为人处事的道理。
+						</h3>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item-content">
+						<h1>关于ACM</h1>
+						<h3>
+							ACM在我的大学生涯中，算比较短暂的一个环节。真正在搞ACM的日子只有大二的两个学期，大二暑假开始就没有搞了，搞得马马虎虎的，懂的算法数据结构也不多，懂的也早忘光了。<b style="color:red">ACM并非适合所有人，可以尝试去努力一下，但如果自己付出了很大的努力，却没有得到什么回报，个人觉得还是应该果断放弃。</b>
+						</h3>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item-content">
+						<h1>我在935的日子</h1>
+						<h2>呵呵呵</h2>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="float control">
+				<a class="right" href="#display" data-slide="next">
+					<button type="button" class="btn btn-lg btn-success">NEXT</button>
+				</a>
+			</div>
+
+		</div><!-- /.carousel -->
+	</div>
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="js/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#screen").append(content[0]);
+			// 不自动播放
+			$('.carousel').each(function(){
+		        $(this).carousel({
+		            interval: false
+		        });
+		    });
+		});
+	</script>
+
+</body>
+</html>
